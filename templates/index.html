@@ -5,13 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IRS</title>
+        <link rel="stylesheet" href="./static/style.css">
     </head>
 
     <body>
+        <h1>CSCE 5200.006</h1>
+        <h2>Information Retrieval and Web Search</h2>
+        <h4>Naga Vara Pradeep Yendluri</h4>
         <form action="/upload_query" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" multiple />
+            <input accept=".txt" type="file" name="file" multiple required />
             <input type="submit" value="Upload">
         </form>
+        <br><br>
+        <footer>Upload only .txt files. Stemming and Lemmatization are not yet perfect.</br>
+            w(t, d) = (0.5 + 0.5 * tf / max_tf) * log ( N / df)
+        </footer>
     </body>
 
 </html>

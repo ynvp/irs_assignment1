@@ -9,7 +9,21 @@
 
     <body>
         <h1>Query Results</h1>
-        <p>{{ query }}</p>
+        <table>
+            <tr>
+                <th>Doc ID</th>
+                <th>Score</th>
+                <th>Rank</th>
+            </tr>
+            {% for key, value in doc_ranks.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+                <td>{{ loop.index }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
     </body>
 
 </html>
