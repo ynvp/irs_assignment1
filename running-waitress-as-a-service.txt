@@ -1,0 +1,13 @@
+[Unit]
+Description=irs service
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+WorkingDirectory=/root/irs
+ExecStart=/root/irs/venv/bin/waitress-serve --host 0.0.0.0 --port 3456 app:app
+Restart=always
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target

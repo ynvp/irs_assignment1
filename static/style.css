@@ -8,19 +8,12 @@ html {
     margin: auto;
 }
 
-body {
-    display: table-cell;
-}
-
-h1 {
+h1,
+h2 {
     text-align: center;
 }
 
-h4 {
-    text-align: right;
-}
-
-footer {
-    border: 1px black dotted;
-    padding: 10px;
+th,
+td {
+    border-style: inset;
 }

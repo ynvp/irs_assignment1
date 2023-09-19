@@ -9,17 +9,41 @@
     </head>
 
     <body>
-        <h1>CSCE 5200.006</h1>
-        <h2>Information Retrieval and Web Search</h2>
-        <h4>Naga Vara Pradeep Yendluri</h4>
+        <h1>CSCE 5200 Information Retrieval and Web Search</h1>
+        <h2>Assignment 1</h2>
+
+        <h4 style="text-align: right;">Naga Vara Pradeep Yendluri</h4>
+        <p style="text-align:right">NagaVaraPradeepYendluri[at]my.unt.edu</p>
         <form action="/upload_query" method="POST" enctype="multipart/form-data">
             <input accept=".txt" type="file" name="file" multiple required />
             <input type="submit" value="Upload">
         </form>
         <br><br>
-        <footer>Upload only .txt files. Stemming and Lemmatization are not yet perfect.</br>
+        <h4>Features</h4>
+        <ul>
+            <li>Users can upload files simultaneously without accounts</li>
+            <li>Creates a temporary secure directory for files upload</li>
+            <li>Easy to run on local system.</li>
+        </ul>
+        <h4>Tech Used</h4>
+        <ul>
+            <li>VPS from RackNerd.com</li>
+            <li>OS: Ubuntu 18.04 LTS</li>
+            <li>Programming Language: Python</li>
+            <li>Web Framework: Flask (https://flask.palletsprojects.com/en/2.3.x/)</li>
+            <li>Prod Server: Gunicorn running on 4 worker nodes</li>
+        </ul>
+        <h4>Sample text files</h4>
+        <a href="https://irs.pradeep.win/download">Sample .txt files</a>
+        <p>Extract and upload for testing application.</p>
+        <p> Code open sourced @ https://github.com/ynvp/irs_assignment1</p>
+        <p style="border: 1px black dotted;padding: 10px;">Upload only .txt files.
+            Uploaded files will be deleted on server after process is completed.
+            Stemming and Lemmatization are not yet perfect.</br>
             w(t, d) = (0.5 + 0.5 * tf / max_tf) * log ( N / df)
-        </footer>
+        </p>
+
+        <footer>Pradeep Yendluri © 2023</footer>
     </body>
 
 </html>

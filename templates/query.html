@@ -9,10 +9,18 @@
     </head>
 
     <body>
-        <h1>Query Page</h1>
-        <form action="/query_result" method="POST">
-            <label for="query">Please enter your query: </label>
-            <input type="text" id="query" name="query" placeholder="...">
+        <h1>CSCE 5200 Information Retrieval and Web Search</h1>
+        <h2>Assignment 1</h2>
+
+        <h4 style="text-align: right;">Naga Vara Pradeep Yendluri</h4>
+        <p style="text-align:right">NagaVaraPradeepYendluri[at]my.unt.edu</p>
+        <h3>Query Page</h3>
+        <form action="/query_result" method="POST" style="align-items: center;">
+            <label for="directory_id">Directory ID</label>
+            <input type="text" id="directory_id" name="directory_id" value="{{ dir_id }}" title="{{dir_id}}"
+                style="width: 250px" readonly>
+            <br><br> <label for="query">Please enter your query: </label>
+            <input type=" text" id="query" name="query" placeholder="query">
             <button type="submit">Search</button>
         </form>
     </body>

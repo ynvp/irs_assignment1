@@ -1,0 +1,13 @@
+[2023-09-17 19:49:49 +0100] [8576] [INFO] Starting gunicorn 21.2.0
+[2023-09-17 19:49:49 +0100] [8576] [INFO] Listening at: http://0.0.0.0:3456 (8576)
+[2023-09-17 19:49:49 +0100] [8576] [INFO] Using worker: sync
+[2023-09-17 19:49:49 +0100] [8579] [INFO] Booting worker with pid: 8579
+[2023-09-17 19:49:49 +0100] [8580] [INFO] Booting worker with pid: 8580
+[2023-09-17 19:49:49 +0100] [8581] [INFO] Booting worker with pid: 8581
+[2023-09-17 19:49:49 +0100] [8582] [INFO] Booting worker with pid: 8582
+[2023-09-17 19:49:59 +0100] [8576] [INFO] Handling signal: int
+[2023-09-17 19:49:59 +0100] [8579] [INFO] Worker exiting (pid: 8579)
+[2023-09-17 19:49:59 +0100] [8580] [INFO] Worker exiting (pid: 8580)
+[2023-09-17 19:49:59 +0100] [8581] [INFO] Worker exiting (pid: 8581)
+[2023-09-17 19:49:59 +0100] [8582] [INFO] Worker exiting (pid: 8582)
+[2023-09-17 19:49:59 +0100] [8576] [INFO] Shutting down: Master
